@@ -36,7 +36,7 @@ function nextSequence(){
 	}, 100);
 	}
 
-	$(document).on("touchstart", function (){
+	$(body).on("touchstart", function(){
 		if(startGame === true) {
 			startGame = false;
 		}
@@ -47,7 +47,7 @@ function nextSequence(){
 		if(startGame === true	) {
 			nextSequence();
 		}
-	})
+	});
 	$(document).keydown(function (){
 		if(startGame === true) {
 			startGame = false;
@@ -59,7 +59,7 @@ function nextSequence(){
 		if(startGame === true	) {
 			nextSequence();
 		}
-	})
+	});
 
 	function checkAnswer(currentLevel){
 		if (userClickedPattern[currentLevel] === gamePattern[currentLevel]){
