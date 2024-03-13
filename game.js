@@ -36,6 +36,18 @@ function nextSequence(){
 	}, 100);
 	}
 
+	$(document).on ("touchStart", function (){
+		if(startGame === true) {
+			startGame = false;
+		}
+		else{
+			startGame = true;
+		}
+
+		if(startGame === true	) {
+			nextSequence();
+		}
+	})
 	$(document).keydown(function (){
 		if(startGame === true) {
 			startGame = false;
