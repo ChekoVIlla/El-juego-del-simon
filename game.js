@@ -36,7 +36,7 @@ function nextSequence(){
 	}, 100);
 	}
 
-	$(document).on ("touchStart", function (){
+	$(document).on("touchstart", function (){
 		if(startGame === true) {
 			startGame = false;
 		}
