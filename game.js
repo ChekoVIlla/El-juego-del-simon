@@ -36,7 +36,7 @@ function nextSequence(){
 	}, 100);
 	}
 
-	window.addEventListener("touchstart", function(){
+	$("h1").on("click", function(){
 		if(startGame === true) {
 			startGame = false;
 		}
