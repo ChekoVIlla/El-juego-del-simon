@@ -6,7 +6,7 @@ var level = 0
 	
 function nextSequence(){
 	userClickedPattern = [];
-	var randomNumber = Math.floor(Math.random() * 3) + 1;
+	var randomNumber = Math.floor(Math.random() * 4);
 	var randomChosenColour = buttonColors[randomNumber];
 	 gamePattern.push(randomChosenColour);
 	 $("#" + randomChosenColour).fadeOut(100).fadeIn(100);
@@ -88,7 +88,3 @@ function nextSequence(){
 		level = 0;
 		gamePattern = [];
 	}
-	// for(var i = 0; i < gamePattern.length; i++){
-	// var flash = $("#" + gamePattern[i]).fadeOut(100).fadeIn(100);
-	//    setTimeout(flash, 10000);
-	// }
